@@ -1,0 +1,39 @@
+{
+    "name": "rtablada/oauth-redis-storage",
+    "description": "A Redis Based Storage Driver for League OAuth Server.",
+    "keywords": [
+        "oauth-redis-storage"
+    ],
+    "homepage": "https://github.com/rtablada/oauth-redis-storage",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ryan Tablada",
+            "email": "ryan@embergrep.com",
+            "homepage": "http://ryantablada.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : ">=5.3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "4.*",
+        "scrutinizer/ocular": "~1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rtablada\\OAuthRedis\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Rtablada\\OAuthRedis\\Test\\": "tests"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
